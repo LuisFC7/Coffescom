@@ -6,6 +6,8 @@ import {
   BrowserRouter as Router,
   Route,
 } from 'react-router-dom';
+
+import Administradort from './pages/Administrador de tienda';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 
@@ -14,6 +16,7 @@ const App = () => {
     <div className='container'>
       <Router>
         <Switch>
+          <Route exact path='/' component={Administradort} />
           <Route exact path='/' component={Home} />
           <Route exact path='/cart' component={Cart} />
           <Redirect to='/' />
