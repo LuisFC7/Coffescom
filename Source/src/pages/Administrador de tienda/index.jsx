@@ -1,17 +1,17 @@
 import React, { useRef } from 'react';
 import Footer from '../../components/common/Footer';
 import Banner from '../../components/Home/Banner';
-import PAdmistradort from '../../components/Administrador de tienda';
+import Administradorprincipal from '../../components/Administrador de tienda';
 
-const Administradort = () => {
+const Administradorvistap = () => {
     
     return (
       <div>
-        <PAdmistradort></PAdmistradort>
+        <Administradorprincipal></Administradorprincipal>
         <Footer />
       </div>
     );
   };
   
-  export default Administradort;
+  export default Administradorvistap;
   

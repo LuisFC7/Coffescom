@@ -1,21 +1,37 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './styles.css';
 import Logo from '../common/Logo/';
+import Menu from '../common/Menu';
+import { menuItemsData } from '../common/Menu/data';
+// import Pedidos from './Pedidos';
 
-const PAdministradort = () => {
+const Administradorprincipal = () => {
+    const menuRef = useRef();
+
+
+    const handleScrollMenu = () => {
+        menuRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
     
     return (
         <div>
             <div>
-                <Logo></Logo>
+                <Logo handleScrollMenu={handleScrollMenu}></Logo>
             </div>
-            <h1>Pedidos pendientes</h1>
-
-            <button class="btn">
-                Regresar <i className='fas fa-long-arrow-left'></i>
-            </button>
+            <h1>Bienvenido Nombre de tienda desde BD</h1>
+            <h3>Mantente al dia con tus productos.</h3>
+            <h3>Pendientes.</h3>
+                
+            <button onClick={handleScrollMenu}>
+                Todos tus productos <i className='fas fa-long-arrow-alt-right'></i>
+            </button> 
+            <Menu list={menuItemsData} ref={menuRef} />
+            <button onClick={handleScrollMenu}>
+                Pedidos <i className='fas fa-long-arrow-alt-right'></i>
+            </button> 
+            
         </div>
     );
 };
 
-export default PAdministradort;
+export default Administradorprincipal;
