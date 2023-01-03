@@ -29,7 +29,6 @@ const Administradorprincipal = () => {
                     <h3>Pendientes.</h3>
                 </div>
                 {/* Aqui se ingresa el menú de hamburguesa para ver las opciones a visualizar */}
-                    <App></App>
                 
             </div>
                 
