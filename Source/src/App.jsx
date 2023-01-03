@@ -18,7 +18,7 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path='/' component={Administradort} />
-          <Route exact path='/' component={Pedidosp} />
+          <Route exact path='/pedidos' component={Pedidosp} />
           <Route exact path='/' component={Home} />
           <Route exact path='/cart' component={Cart} />
           <Redirect to='/' />

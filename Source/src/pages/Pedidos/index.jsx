@@ -7,7 +7,7 @@ const Pedidosp = () => {
   return (
     <div>
         <Pedidos></Pedidos>
-      <Footer></Footer>
+        <Footer></Footer>
     </div>
   );
 };

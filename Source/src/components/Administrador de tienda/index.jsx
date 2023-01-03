@@ -6,6 +6,7 @@ import { menuItemsData } from '../common/Menu/data';
 import Pedidos from '../common/Pedidos';
 import {useHistory} from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import App from '../MenuH/App'
 
 const Administradorprincipal = () => {
     const menuRef = useRef();
@@ -15,7 +16,7 @@ const Administradorprincipal = () => {
     };
     
     const history=useHistory();
-    const handleClick=()=>history.push('/Pedidosp');
+    const handleClick=()=>history.push('/pedidos');
     return (
         <div>
             <div>
@@ -27,20 +28,9 @@ const Administradorprincipal = () => {
                     <h3>Mantente al dia con tus productos.</h3>
                     <h3>Pendientes.</h3>
                 </div>
-                <div class="respmenu">
-                    {/* <input type="checkbox"> */}
-                    <i class="fas fa-bars"></i>
-                    <i class="fas fa-times"></i>
-                    <nav>
-                        <ul>
-                        <li><a href="#" onClick={handleClick}>Productos</a></li>
-                        <li><a href="/Pedidosp">Pedidos</a></li>
-                        <li><a href="#">Configuración</a></li>
-                        <li><a href="#">Cerrar Sesión</a></li>
-                        <Link to="/Pedidosp">Pedidosp</Link>
-                        </ul>
-                    </nav>
-                </div>
+                {/* Aqui se ingresa el menú de hamburguesa para ver las opciones a visualizar */}
+                    <App></App>
+                
             </div>
                 
             <button onClick={handleScrollMenu}>
@@ -50,6 +40,7 @@ const Administradorprincipal = () => {
             <button onClick={handleClick}>
                 Pedidos <i className='fas fa-long-arrow-alt-right'></i>
             </button>     
+            
         </div>
     );
 };
