@@ -12,7 +12,6 @@ function Header() {
 
   return (
     <HeaderWrapper>
-      <h2>Logo</h2>
       <Navbar open={open} />
       <MenuButton open={open} handleClick={handleClick} />
     </HeaderWrapper>

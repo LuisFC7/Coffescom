@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { useHistory } from 'react-router';
 import { createStructuredSelector } from 'reselect';
-import { selectCartItemsCount } from '../../../redux/cart/cart.selector';
+// import { selectCartItemsCount } from '../../../redux/cart/cart.selector';
 import './styles.css';
 
 const editAdminProfile = () => {

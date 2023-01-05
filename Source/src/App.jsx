@@ -7,6 +7,8 @@ import {
   Route,
 } from 'react-router-dom';
 
+import editAdminProfile from './pages/editAdminProfile';
+import ProductAdministrarion from './pages/Products';
 import Administradort from './pages/Administrador de tienda';
 import Pedidosp from './pages/Pedidos';
 import Home from './pages/Home';
@@ -18,7 +20,9 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path='/' component={Administradort} />
+          <Route exact path='/perfilA' component={editAdminProfile} />
           <Route exact path='/pedidos' component={Pedidosp} />
+          <Route exact path='/productos' component={ProductAdministrarion} />
           <Route exact path='/' component={Home} />
           <Route exact path='/cart' component={Cart} />
           <Redirect to='/' />
