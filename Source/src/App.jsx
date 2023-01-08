@@ -7,7 +7,7 @@ import {
   Route,
 } from 'react-router-dom';
 
-import editAdminProfile from './pages/editAdminProfile';
+import editAdmin from './pages/editAdminProfile';
 import Administradort from './pages/Administrador de tienda';
 import Pedidosp from './pages/Pedidos';
 import Home from './pages/Home';
@@ -20,10 +20,10 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path='/' component={Administradort} />
-          <Route exact path='/perfilA' component={editAdminProfile} />
+          <Route exact path='/perfilA' component={editAdmin} />
           <Route exact path='/pedidos' component={Pedidosp} />
           <Route exact path='/productos' component={ProdAdmin} />
-          <Route exact path='/' component={Home} />
+          <Route exact path='/Usuario' component={Home} />
           <Route exact path='/cart' component={Cart} />
           <Redirect to='/' />
         </Switch>

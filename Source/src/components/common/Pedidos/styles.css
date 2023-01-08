@@ -1,12 +1,19 @@
 section{
     align-items: center;
-    background-color: darkgrey;
-    border-radius: 3rem;
+    background-color: #DCE1E7;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin-top: 2rem;
 }
 
 table{
-    width: 70%;
+    width: 90%;
     margin-top: 2rem;
     margin-bottom: 3rem;
     text-align: center;
+    background-color: #DBE7F5;
+}
+
+.contenido{
+    align-items: center;
 }

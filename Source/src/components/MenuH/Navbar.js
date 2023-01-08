@@ -4,7 +4,7 @@ import {useHistory} from 'react-router-dom';
 function Navbar({ open }) {
   const history=useHistory();
   const handleClick=()=>history.push('/pedidos');
-  const handleClick2=()=>history.push('/productos');
+  const handleClick2=()=>history.push('/usuario');
   const handleClick3=()=>history.push('/perfilA');
   return (
     <NavbarWrapper open={open}>
