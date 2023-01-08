@@ -13,17 +13,19 @@ import Pedidosp from './pages/Pedidos';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 import ProdAdmin from './pages/Products';
+import Historialp from './pages/Historial';
 
 const App = () => {
   return (
     <div className='container'>
       <Router>
         <Switch>
+          
           <Route exact path='/' component={Administradort} />
           <Route exact path='/perfilA' component={editAdmin} />
           <Route exact path='/pedidos' component={Pedidosp} />
           <Route exact path='/productos' component={ProdAdmin} />
-          <Route exact path='/Usuario' component={Home} />
+          <Route exact path='/' component={Home} />
           <Route exact path='/cart' component={Cart} />
           <Redirect to='/' />
         </Switch>

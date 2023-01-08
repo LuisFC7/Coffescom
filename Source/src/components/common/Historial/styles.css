@@ -1,0 +1,12 @@
+section{
+    align-items: center;
+    background-color: darkgrey;
+    border-radius: 3rem;
+}
+
+table{
+    width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
