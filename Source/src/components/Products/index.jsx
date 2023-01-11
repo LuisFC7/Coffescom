@@ -25,12 +25,12 @@ const ProductAdministrarion = () => {
 						</tr>
 					</thead>
 					<tr>
-						<td><input type="text" name="" id="" /></td>
-						<td><input type="text" name="" id="" /></td>
-						<td><input type="text" name="" id="" /></td>
-						<td><input type="number" /></td>
-						<td><input type="file" name="" id="" /></td>
-						<td><input type="button" value="Agregar" /></td>
+						<td><input class="campos" type="text" name="" id="" /></td>
+						<td><input class="campos" type="text" name="" id="" /></td>
+						<td><input class="campos" type="text" name="" id="" /></td>
+						<td><input class="campos"  type="number" /></td>
+						<td><input class="file" type="file" name="" id="" /></td>
+						<td><input class="btnagregar" type="button" value="Agregar" /></td>
 					</tr>
 				</table>
 			</div>
@@ -63,7 +63,7 @@ const ProductAdministrarion = () => {
 								<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
 								<td> <input type="number" name="" id="" value="80"/></td>
 								<td> <input type="number" name="" id="" value="10"/> </td>
-								<td> <input name="" id="" value="Ruta"/></td>
+								<td> <input type="file" name="" id="" /></td>
 								<td><input class="btnact" type="submit" value="Actualizar" /></td>
 								<td><input class="btnelim" type="submit" value="Eliminar" /></td>
 							</tr>
@@ -72,7 +72,7 @@ const ProductAdministrarion = () => {
 								<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
 								<td> <input type="number" name="" id="" value="80"/> </td>
 								<td> <input type="number" name="" id="" value="10"/> </td>
-								<td> <input name="" id="" value="Ruta"/> </td>
+								<td> <input type="file" name="" id="" /></td>
 								<td><input class="btnact" type="submit" value="Actualizar" /></td>
 								<td><input class="btnelim" type="submit" value="Eliminar" /></td>
 							</tr>
@@ -81,7 +81,7 @@ const ProductAdministrarion = () => {
 								<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
 								<td> <input type="number" name="" id="" value="10"/> </td>
 								<td> <input type="number" name="" id="" value="80"/> </td>
-								<td> <input type="text" name="" id="" value="Ruta"/> </td>
+								<td> <input type="file" name="" id="" /></td>
 								<td><input class="btnact" type="submit" value="Actualizar" /></td>
 								<td><input class="btnelim" type="submit" value="Eliminar" /></td>
 							</tr> 

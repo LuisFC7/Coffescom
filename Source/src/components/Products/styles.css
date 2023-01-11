@@ -4,6 +4,70 @@
 	font-family: 'Varela Round', sans-serif;
 	font-size: 13px;
 } */
+
+.agregar table{
+	width:90%;
+	
+}
+.agregar .campos{
+	width:80%;
+}
+.agregar .files{
+	width:100%;
+	height:auto;
+}
+.agregar .btnagregar{
+    font-family: 'Inter', sans-serif;
+    background-color: #A4F6B2;
+    color: black;
+    text-align: center;
+    width: auto;
+    height: 50%;
+}
+.agregar .btnagregar:hover{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background-color: #00D323;
+    color: white;
+    text-align: center;
+    width: auto;
+    height: 90%;
+}
+.btnact{
+    font-family: 'Inter', sans-serif;
+    background-color: #A4F6B2;
+    color: black;
+    text-align: center;
+    width: auto;
+    height: 50%;
+}
+.btnact:hover{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background-color: #00D323;
+    color: white;
+    text-align: center;
+    width: auto;
+    height: 90%;
+}
+.btnelim{
+    font-family: 'Inter', sans-serif;
+    background-color: #FA7272;
+    color: black;
+    text-align: center;
+    width: auto;
+    height: 50%;
+}
+.btnelim:hover{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background-color: #FF0000;
+    color: white;
+    text-align: center;
+    width: auto;
+    height: 90%;
+}
+
 .table-responsive {
     margin: 30px 0;
 }
@@ -87,14 +151,10 @@ table.table td a {
 table.table td a:hover {
 	color: #2196F3;
 }
-table.table td a.edit {
-	color: #FFC107;
-}
-table.table td a.delete {
-	color: #F44336;
-}
+
 table.table td i {
 	font-size: 19px;
+	width: 90%;
 }
 table.table .avatar {
 	border-radius: 50%;
