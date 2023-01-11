@@ -5,7 +5,7 @@ import {useHistory} from 'react-router-dom';
 
 const Pedidos =()=>{
     const history=useHistory();
-    const handleClick=()=>history.push('/Admin');
+    const handleClick=()=>history.push('/');
         return(
             <div class="contenido">
                 <Logo></Logo>
@@ -20,7 +20,8 @@ const Pedidos =()=>{
                                 <th>Usuario</th>
                                 <th>Cantidad</th>
                                 <th>Precio</th>
-                                <th>Aprobar</th>
+                                <th>Aceptar</th>
+                                <th>Rechazar</th>
                                 <th>Comentario</th>
                             </tr>
                             <tr>
@@ -29,10 +30,9 @@ const Pedidos =()=>{
                                 <td>Alberto Martinez</td>
                                 <td>2</td>
                                 <td>$70.00</td>
-                                <td>
-                                    <div>
-                                    </div>
-                                </td>
+                                <td><input class="btnacept" type="button" value="Aceptar" /></td>
+                                <td><input class="btndele" type="button" value="Rechazar" /></td>
+                                <td><textarea name="" id="" cols="15" rows="3"></textarea></td>
                             </tr>
                             <tr>
                                 <td>4</td>
@@ -40,7 +40,9 @@ const Pedidos =()=>{
                                 <td>Karla Gonzales</td>
                                 <td>1,1</td>
                                 <td>$32.50</td>
-                                <td></td>
+                                <td><input class="btnacept" type="button" value="Aceptar" /></td>
+                                <td><input class="btndele" type="button" value="Rechazar" /></td>
+                                <td><textarea name="" id="" cols="15" rows="3"></textarea></td>
                             </tr>
                         </table>
                     </div>

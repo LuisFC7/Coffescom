@@ -25,7 +25,7 @@ const App = () => {
           <Route exact path='/perfilA' component={editAdmin} />
           <Route exact path='/pedidos' component={Pedidosp} />
           <Route exact path='/productos' component={ProdAdmin} />
-          <Route exact path='/' component={Home} />
+          <Route exact path='/usuario' component={Home} />
           <Route exact path='/cart' component={Cart} />
           <Redirect to='/' />
         </Switch>

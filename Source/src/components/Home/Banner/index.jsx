@@ -11,7 +11,7 @@ const Banner = ({ handleScrollMenu }) => (
         <h1>Alimentos y productos de forma rápida</h1>
         <p>Hecha un vistazo a los productos del día</p>
         <button onClick={handleScrollMenu}>
-          Ver menú de tiendas <i className='fas fa-long-arrow-alt-right'></i>
+          Ver menú de productos <i className='fas fa-long-arrow-alt-right'></i>
         </button>
       </div>
     </div>

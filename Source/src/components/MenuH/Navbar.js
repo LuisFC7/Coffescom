@@ -13,7 +13,7 @@ function Navbar({ open }) {
       <a onClick={handleClick2}>Catálogo de productos</a>
       <a onClick={handleClick}>Pedidos</a>
       <a onClick={handleClick3}>Cuenta</a>
-      <a onClick={handleClick4}>Historial</a>
+      {/* <a onClick={handleClick4}>Historial</a> */}
       <a onClick={handleClick}>Salir</a>
     </NavbarWrapper>
   );

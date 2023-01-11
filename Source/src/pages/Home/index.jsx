@@ -15,6 +15,7 @@ const Home = () => {
   return (
     <div>
       <Banner handleScrollMenu={handleScrollMenu} />
+      <h1>Catalogo de productos Cafeteria "Pancito"</h1>
       <Menu list={menuItemsData} ref={menuRef} />
       <Footer />
       <ButtonCartCount />

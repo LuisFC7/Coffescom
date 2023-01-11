@@ -1,7 +1,10 @@
 .cart-header {
   padding-top: 0.5rem;
 }
-
+.orders-menu h4{
+  font-weight:normal;
+  font-style: italic;
+}
 .orders {
   margin: 2rem 0 0 0;
   min-height: calc(100vh - 15rem);

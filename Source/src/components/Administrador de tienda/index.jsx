@@ -25,7 +25,7 @@ const Administradorprincipal = () => {
             </div>
             <div class='Opciones'>
                 <div>
-                    <h1>Bienvenido "Barra de café Pancito"</h1>
+                    <h1>Bienvenido Cafeteria "Pancito"</h1>
                     <h3>Mantente al dia con tus productos.</h3>
                     <h3>Pendientes.</h3>
                 </div>

@@ -11,6 +11,29 @@ const ProductAdministrarion = () => {
     return(
         <div class="container-xl">
 			<Logo></Logo>
+			<div class="agregar">
+				<h2>Agregar producto</h2>
+				<table>
+					<thead>
+						<tr>
+							<td>Nombre</td>
+							<td>Descripción</td>
+							<td>Precio</td>
+							<td>Cantidad</td>
+							<td>Imagen</td>
+							<td>Agregar</td>
+						</tr>
+					</thead>
+					<tr>
+						<td><input type="text" name="" id="" /></td>
+						<td><input type="text" name="" id="" /></td>
+						<td><input type="text" name="" id="" /></td>
+						<td><input type="number" /></td>
+						<td><input type="file" name="" id="" /></td>
+						<td><input type="button" value="Agregar" /></td>
+					</tr>
+				</table>
+			</div>
 			<div class="table-responsive">
 				<div class="table-wrapper">
 					<div class="table-title">
@@ -25,47 +48,42 @@ const ProductAdministrarion = () => {
 					<table class="table table-striped table-hover">
 						<thead>
 							<tr>
-								<th>Titulo</th>
+								<th>Nombre</th>
 								<th>Descripción</th>
 								<th>Precio</th>
 								<th>Cantidad</th>
 								<th>Imagen</th>
-								<th>Acciones</th>
+								<th>Actualizar</th>
+								<th>Eliminar</th>
 							</tr>
 						</thead>
 						<tbody>
-				<tr>
+							<tr>
 								<td> <input type="text" name="" id="" value="ensalada"/> </td>
 								<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
 								<td> <input type="number" name="" id="" value="80"/></td>
 								<td> <input type="number" name="" id="" value="10"/> </td>
-								<td> <input name="" id="" value="Ruta"/> </td>
-					<td>
-									<a class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-									<a class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-								</td>
+								<td> <input name="" id="" value="Ruta"/></td>
+								<td><input class="btnact" type="submit" value="Actualizar" /></td>
+								<td><input class="btnelim" type="submit" value="Eliminar" /></td>
 							</tr>
-				<tr>
+							<tr>
 								<td> <input type="text" name="" id="" value="ensalada"/> </td>
 								<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
 								<td> <input type="number" name="" id="" value="80"/> </td>
 								<td> <input type="number" name="" id="" value="10"/> </td>
 								<td> <input name="" id="" value="Ruta"/> </td>
-					<td>
-									<a class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-									<a class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-								</td>
+								<td><input class="btnact" type="submit" value="Actualizar" /></td>
+								<td><input class="btnelim" type="submit" value="Eliminar" /></td>
 							</tr>
-				<tr>
+							<tr>
 								<td> <input type="text" name="" id="" value="ensalada"/> </td>
 								<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
 								<td> <input type="number" name="" id="" value="10"/> </td>
 								<td> <input type="number" name="" id="" value="80"/> </td>
 								<td> <input type="text" name="" id="" value="Ruta"/> </td>
-								<td>
-									<a class="add" data-toggle="modal"><i class="material-icons" title="Add">&#xE147;</i></a>
-									<a class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Cacel">&#xE872;</i></a>
-								</td>
+								<td><input class="btnact" type="submit" value="Actualizar" /></td>
+								<td><input class="btnelim" type="submit" value="Eliminar" /></td>
 							</tr> 
 						</tbody>
 					</table>
