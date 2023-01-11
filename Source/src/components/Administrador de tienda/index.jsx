@@ -6,7 +6,7 @@ import { menuItemsData } from '../common/Menu/data';
 import Pedidos from '../common/Pedidos';
 import {useHistory} from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import App from '../MenuH/App'
+import App from '../MenuH/App';
 
 const Administradorprincipal = () => {
     const menuRef = useRef();

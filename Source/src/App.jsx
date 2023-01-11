@@ -7,13 +7,13 @@ import {
   Route,
 } from 'react-router-dom';
 
-import editAdmin from './pages/editAdminProfile';
+import EditAper from './pages/editAdmin';
 import Administradort from './pages/Administrador de tienda';
 import Pedidosp from './pages/Pedidos';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 import ProdAdmin from './pages/Products';
-import Historialp from './pages/Historial';
+import Useredit from './pages/editUser';
 
 const App = () => {
   return (
@@ -22,7 +22,8 @@ const App = () => {
         <Switch>
           
           <Route exact path='/' component={Administradort} />
-          <Route exact path='/perfilA' component={editAdmin} />
+          <Route exact path='/perfilA' component={EditAper} />
+          <Route exact path='/useredit' component={Useredit} />
           <Route exact path='/pedidos' component={Pedidosp} />
           <Route exact path='/productos' component={ProdAdmin} />
           <Route exact path='/usuario' component={Home} />
