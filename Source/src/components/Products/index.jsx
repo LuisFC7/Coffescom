@@ -6,65 +6,92 @@ import {useHistory} from 'react-router-dom';
 
 const ProductAdministrarion = () => {
 
+	const history=useHistory();
+    const handleClick=()=>history.push('/Admin');
     return(
         <div class="container-xl">
-		<Logo></Logo>
-		<div class="table-responsive">
-			<div class="table-wrapper">
-				<div class="table-title">
-					<div class="row">
-						<div class="col-sm-6">
-							<h2>Administracion de productos</h2>
-						</div>
-						<div class="col-sm-6">
-						</div>
-					</div>
-				</div>
-				<table class="table table-striped table-hover">
+			<Logo></Logo>
+			<div class="agregar">
+				<h2>Agregar producto</h2>
+				<table>
 					<thead>
 						<tr>
-							<th>Titulo</th>
-							<th>Descripción</th>
-							<th>Precio</th>
-							<th>Cantidad</th>
-							<th>Acciones</th>
+							<td>Nombre</td>
+							<td>Descripción</td>
+							<td>Precio</td>
+							<td>Cantidad</td>
+							<td>Imagen</td>
+							<td>Agregar</td>
 						</tr>
 					</thead>
-					<tbody>
-			<tr>
-							<td> <input type="text" name="" id="" value="ensalada"/> </td>
-							<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
-							<td> <input type="number" name="" id="" value="80"/></td>
-							<td> <input type="number" name="" id="" value="10"/> </td>
-				<td>
-								<a class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-								<a class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-							</td>
-						</tr>
-			<tr>
-							<td> <input type="text" name="" id="" value="ensalada"/> </td>
-							<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
-							<td> <input type="number" name="" id="" value="80"/> </td>
-							<td> <input type="number" name="" id="" value="10"/> </td>
-				<td>
-								<a class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-								<a class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-							</td>
-						</tr>
-			<tr>
-							<td> <input type="text" name="" id="" value="ensalada"/> </td>
-							<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
-							<td> <input type="number" name="" id="" value="10"/> </td>
-							<td> <input type="number" name="" id="" value="80"/> </td>
-							<td>
-								<a class="add" data-toggle="modal"><i class="material-icons" title="Add">&#xE147;</i></a>
-								<a class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Cacel">&#xE872;</i></a>
-							</td>
-						</tr> 
-					</tbody>
+					<tr>
+						<td><input class="campos" type="text" name="" id="" /></td>
+						<td><input class="campos" type="text" name="" id="" /></td>
+						<td><input class="campos" type="text" name="" id="" /></td>
+						<td><input class="campos"  type="number" /></td>
+						<td><input class="file" type="file" name="" id="" /></td>
+						<td><input class="btnagregar" type="button" value="Agregar" /></td>
+					</tr>
 				</table>
 			</div>
-		</div>        
+			<div class="table-responsive">
+				<div class="table-wrapper">
+					<div class="table-title">
+						<div class="row">
+							<div class="col-sm-6">
+								<h2>Administracion de productos</h2>
+							</div>
+							<div class="col-sm-6">
+							</div>
+						</div>
+					</div>
+					<table class="table table-striped table-hover">
+						<thead>
+							<tr>
+								<th>Nombre</th>
+								<th>Descripción</th>
+								<th>Precio</th>
+								<th>Cantidad</th>
+								<th>Imagen</th>
+								<th>Actualizar</th>
+								<th>Eliminar</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td> <input type="text" name="" id="" value="ensalada"/> </td>
+								<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
+								<td> <input type="number" name="" id="" value="80"/></td>
+								<td> <input type="number" name="" id="" value="10"/> </td>
+								<td> <input type="file" name="" id="" /></td>
+								<td><input class="btnact" type="submit" value="Actualizar" /></td>
+								<td><input class="btnelim" type="submit" value="Eliminar" /></td>
+							</tr>
+							<tr>
+								<td> <input type="text" name="" id="" value="ensalada"/> </td>
+								<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
+								<td> <input type="number" name="" id="" value="80"/> </td>
+								<td> <input type="number" name="" id="" value="10"/> </td>
+								<td> <input type="file" name="" id="" /></td>
+								<td><input class="btnact" type="submit" value="Actualizar" /></td>
+								<td><input class="btnelim" type="submit" value="Eliminar" /></td>
+							</tr>
+							<tr>
+								<td> <input type="text" name="" id="" value="ensalada"/> </td>
+								<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
+								<td> <input type="number" name="" id="" value="10"/> </td>
+								<td> <input type="number" name="" id="" value="80"/> </td>
+								<td> <input type="file" name="" id="" /></td>
+								<td><input class="btnact" type="submit" value="Actualizar" /></td>
+								<td><input class="btnelim" type="submit" value="Eliminar" /></td>
+							</tr> 
+						</tbody>
+					</table>
+				</div>
+			</div>    
+			<button onClick={handleClick}>
+                Regresar <i className='fas fa-long-arrow-alt-right'></i>
+            </button>    
 	</div>
     );
 

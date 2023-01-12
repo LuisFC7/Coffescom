@@ -6,7 +6,7 @@ import { menuItemsData } from '../common/Menu/data';
 import Pedidos from '../common/Pedidos';
 import {useHistory} from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import App from '../MenuH/App'
+import App from '../MenuH/App';
 
 const Administradorprincipal = () => {
     const menuRef = useRef();
@@ -25,7 +25,7 @@ const Administradorprincipal = () => {
             </div>
             <div class='Opciones'>
                 <div>
-                    <h1>Bienvenido "Barra de café Pancito"</h1>
+                    <h1>Bienvenido Cafeteria "Pancito"</h1>
                     <h3>Mantente al dia con tus productos.</h3>
                     <h3>Pendientes.</h3>
                 </div>

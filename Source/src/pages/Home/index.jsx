@@ -4,6 +4,7 @@ import Footer from '../../components/common/Footer';
 import Banner from '../../components/Home/Banner';
 import Menu from '../../components/common/Menu';
 import { menuItemsData } from '../../components/common/Menu/data';
+import App from '../../components/common/Menuser/App'
 
 const Home = () => {
   const menuRef = useRef();
@@ -15,6 +16,7 @@ const Home = () => {
   return (
     <div>
       <Banner handleScrollMenu={handleScrollMenu} />
+      <h1>Catalogo de productos Cafeteria "Pancito"</h1>
       <Menu list={menuItemsData} ref={menuRef} />
       <Footer />
       <ButtonCartCount />

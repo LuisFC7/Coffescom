@@ -16,7 +16,7 @@ const ButtonAddRemoveItem = ({ quantity, handleAddItem, handleRemoveItem }) => {
         </div>
       ) : (
         <div onClick={handleAddItem} className='btnAddRemove-negative'>
-          <span>ADD</span>
+          <span>Agregar</span>
           <i class='fa fa-plus' aria-hidden='true'></i>
         </div>
       )}
