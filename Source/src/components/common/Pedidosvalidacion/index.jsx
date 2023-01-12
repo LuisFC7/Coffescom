@@ -3,11 +3,9 @@ import './styles.css';
 import Logo from '../Logo';
 import {useHistory} from 'react-router-dom';
 
-const Pedidos =()=>{
+const Pedidosv =()=>{
     const history=useHistory();
     const handleClick=()=>history.push('/Administradort');
-
-    const handleClick2=()=>history.push('/pedidosv');
         return(
             <div class="contenido">
                 <Logo></Logo>
@@ -25,16 +23,6 @@ const Pedidos =()=>{
                                 <th>Aceptar</th>
                                 <th>Rechazar</th>
                                 <th>Comentario</th>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Hamburguesa con papas.</td>
-                                <td>Alberto Martinez</td>
-                                <td>1</td>
-                                <td>$55.00</td>
-                                <td><input class="btnacept" type="button" value="Aceptar" onClick={handleClick2}/></td>
-                                <td><input class="btndele" type="button" value="Rechazar" /></td>
-                                <td><textarea name="" id="" cols="15" rows="3"></textarea></td>
                             </tr>
                             <tr>
                                 <td>4</td>
@@ -82,4 +70,4 @@ const Pedidos =()=>{
         );
 };
 
-export default Pedidos;
+export default Pedidosv;

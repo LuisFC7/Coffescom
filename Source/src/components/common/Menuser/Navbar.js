@@ -3,9 +3,9 @@ import { NavbarWrapper } from "../Menuser/styles/Navbarstyles";
 import {useHistory} from 'react-router-dom';
 function Navbar({ open }) {
   const history=useHistory();
-  const handleClick=()=>history.push('/pedidos');
+  const handleClick=()=>history.push('/pedidosuser');
   const handleClick2=()=>history.push('/productos');
-  const handleClick3=()=>history.push('/Useredit');
+  const handleClick3=()=>history.push('edituser');
   const handleClick4=()=>history.push('/historial');
 
   return (

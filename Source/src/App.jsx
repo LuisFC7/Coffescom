@@ -8,7 +8,9 @@ import {
   Route,
 } from 'react-router-dom';
 
-import editAdminProfile from './pages/editAdminProfile';
+import Useredit from './pages/editUser';
+import Pedidosvalidacion from './pages/Pedidosvalidacion';
+import Pedidosuser from './pages/Pedidosuser';
 import Administradort from './pages/Administrador de tienda';
 import Pedidosp from './pages/Pedidos';
 import Home from './pages/Home';
@@ -23,14 +25,16 @@ const App = () => {
     <div className='container '>
       <Router>
         <Switch>
-          <Route exact path='/' component={Login} />
+          <Route exact path='/Login' component={Login} />
           <Route exact path='/registro' component={Registro} />
-          <Route exact path='/perfilA' component={editAdminProfile} />
+          <Route exact path='/edituser' component={Useredit} />
           <Route exact path='/pedidos' component={Pedidosp} />
+          <Route exact path='/pedidosuser' component={Pedidosuser} />
+          <Route exact path='/pedidosv' component={Pedidosvalidacion} />
           <Route exact path='/Administradort' component={Administradort} />
           <Route exact path='/productos' component={ProdAdmin} />
           <Route exact path='/historial' component={Historialp} />
-          <Route exact path='/Home' component={Home} />
+          <Route exact path='/usuario' component={Home} />
           <Route exact path='/cart' component={Cart} />
           <Redirect to='/' />
         </Switch>

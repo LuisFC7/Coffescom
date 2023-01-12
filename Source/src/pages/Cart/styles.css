@@ -42,3 +42,9 @@ button {
   cursor: pointer;
   margin-top: 2.5rem;
 }
+
+.principal{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
