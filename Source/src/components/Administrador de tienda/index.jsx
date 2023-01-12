@@ -37,9 +37,7 @@ const Administradorprincipal = () => {
                 Todos tus productos <i className='fas fa-long-arrow-alt-right'></i>
             </button> 
             <Menu list={menuItemsData} ref={menuRef} />
-            <button onClick={handleClick}>
-                Pedidos <i className='fas fa-long-arrow-alt-right'></i>
-            </button>     
+              
             
         </div>
     );

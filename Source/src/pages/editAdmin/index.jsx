@@ -5,7 +5,11 @@ import { useHistory } from 'react-router-dom';
 
 const EditAper = () => {
     const history=useHistory();
-    const handleClick=()=>history.push('/');
+    const handleClick=()=>history.push('/Administradort');
+
+    function validacion(){
+        alert("Datos modificados correctamente :)")
+    }
 
     return (
         <div>
@@ -24,12 +28,12 @@ const EditAper = () => {
                         <td>Aceptar</td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="" id="" /></td>
-                        <td><input type="text" name="" id="" /></td>
-                        <td><input type="email" name="" id="" /></td>
-                        <td><input type="text" name="" id="" /></td>
-                        <td><input type="password" name="" id="" /></td>
-                        <td><input type="submit" value="Aceptar" /></td>
+                        <td><input type="text" name="" id="" value="Pancito"/></td>
+                        <td><input type="text" name="" id="" value="Rodrigo Perez"/></td>
+                        <td><input type="email" name="" id="" value="pruebaadmin@gmail.com"/></td>
+                        <td><input type="text" name="" id="" value="28" /></td>
+                        <td><input type="password" name="" id="" value="contraseña"/></td>
+                        <td><input class="btnacept" type="submit" value="Aceptar" onClick={validacion}/></td>
                     </tr>
                 </table>
             </div>

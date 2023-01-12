@@ -19,6 +19,9 @@ import ProdAdmin from './pages/Products';
 import Historialp from './pages/Historial';
 import Login from './components/Login/Login.jsx'
 import Registro from './components/Register/Registro'
+import EditAper from './pages/editAdmin';
+import Tickets from './pages/Ticket';
+import Pedidofin from './pages/Pedidof';
 
 const App = () => {
   return (
@@ -26,11 +29,14 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path='/Login' component={Login} />
+          <Route exact path='/editAper' component={EditAper} />
+          <Route exact path='/pedidofinal' component={Pedidofin} />
           <Route exact path='/registro' component={Registro} />
           <Route exact path='/edituser' component={Useredit} />
           <Route exact path='/pedidos' component={Pedidosp} />
           <Route exact path='/pedidosuser' component={Pedidosuser} />
           <Route exact path='/pedidosv' component={Pedidosvalidacion} />
+          <Route exact path='/confirmacion' component={Tickets} />
           <Route exact path='/Administradort' component={Administradort} />
           <Route exact path='/productos' component={ProdAdmin} />
           <Route exact path='/historial' component={Historialp} />

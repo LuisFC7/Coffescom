@@ -5,7 +5,7 @@ function Navbar({ open }) {
   const history=useHistory();
   const handleClick=()=>history.push('/pedidos');
   const handleClick2=()=>history.push('/productos');
-  const handleClick3=()=>history.push('/perfilA');
+  const handleClick3=()=>history.push('/editAper');
   const handleClick4=()=>history.push('/historial');
 
   return (

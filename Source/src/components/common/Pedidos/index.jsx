@@ -41,7 +41,7 @@ const Pedidos =()=>{
                                 <td>Papas fritas, Boing.</td>
                                 <td>Karla Gonzales</td>
                                 <td>1,1</td>
-                                <td>$32.50</td>
+                                <td>$40</td>
                                 <td><input class="btnacept" type="button" value="Aceptar" /></td>
                                 <td><input class="btndele" type="button" value="Rechazar" /></td>
                                 <td><textarea name="" id="" cols="15" rows="3"></textarea></td>
@@ -60,17 +60,17 @@ const Pedidos =()=>{
                             </tr>
                             <tr>
                                 <td>1</td>
-                                <td>Refresco limón</td>
+                                <td>Coctel Tooty Fruty</td>
                                 <td>Daniel Jimenez</td>
                                 <td>1</td>
-                                <td>$18.00</td>
+                                <td>$45.00</td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>Gomitas con chile.</td>
                                 <td>Carlos Baez</td>
-                                <td>4</td>
-                                <td>$28.00</td>
+                                <td>1</td>
+                                <td>$15.00</td>
                             </tr>
                         </table>
                     </div>

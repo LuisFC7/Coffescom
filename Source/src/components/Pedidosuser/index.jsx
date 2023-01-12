@@ -42,15 +42,15 @@ const Pedidosu =()=>{
                             </tr>
                             <tr>
                                 <td>11</td>
-                                <td>Barritas Fresa</td>
+                                <td>Pollo frito.</td>
                                 <td>1</td>
-                                <td>$15.00</td>
+                                <td>$65.00</td>
                             </tr>
                             <tr>
                                 <td>12</td>
                                 <td>Galletas oreo</td>
                                 <td>4</td>
-                                <td>$20.00</td>
+                                <td>$18.00</td>
                             </tr>
                         </table>
                     </div>

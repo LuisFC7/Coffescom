@@ -18,6 +18,7 @@ import './styles.css';
 const Cart = ({ cartCount, cartList, cartTotal }) => {
   const history=useHistory();
   const handleClick=()=>history.push('/usuario');
+  const handleClick2=()=>history.push('/confirmacion');
   return (
     <><div class="principal">
         <div className='cart-header'>
@@ -36,7 +37,7 @@ const Cart = ({ cartCount, cartList, cartTotal }) => {
             </div>
 
             <h3 className='orders-total'>Total de compra ${cartTotal}</h3>
-            <button>
+            <button onClick={handleClick2}>
               <i class="fa-light fa-lollipop"></i> Confirmar compra
             </button>
 

@@ -7,7 +7,29 @@ import {useHistory} from 'react-router-dom';
 const ProductAdministrarion = () => {
 
 	const history=useHistory();
-    const handleClick=()=>history.push('/Admin');
+    const handleClick=()=>history.push('/Administradort');
+
+	function validacion(){
+		let nombre=document.getElementById("nomprod").value
+		let nombre2=document.getElementById("nomdes").value
+		let nombre3=document.getElementById("nompre").value
+		let nombre4=document.getElementById("nomcant").value
+		let v1=""
+
+		if(nombre==v1 || nombre2==v1||nombre3==v1||nombre4==v1){
+			alert("Algún campo esta vacio, verifiquelo de nuevo.")
+		}else{
+			alert("El producto "+nombre+" ha sido agregado")
+		}
+	}
+
+	function validacionact(){
+		alert("Producto actualizado.")
+	}
+
+	function validacionelim(){
+		alert("¿Desea eliminar el producto?")
+	}
     return(
         <div class="container-xl">
 			<Logo></Logo>
@@ -25,12 +47,12 @@ const ProductAdministrarion = () => {
 						</tr>
 					</thead>
 					<tr>
-						<td><input class="campos" type="text" name="" id="" /></td>
-						<td><input class="campos" type="text" name="" id="" /></td>
-						<td><input class="campos" type="text" name="" id="" /></td>
-						<td><input class="campos"  type="number" /></td>
-						<td><input class="file" type="file" name="" id="" /></td>
-						<td><input class="btnagregar" type="button" value="Agregar" /></td>
+						<td><input class="campos" type="text" name="" id="nomprod" /></td>
+						<td><input class="campos" type="text" name="" id="nomdes" /></td>
+						<td><input class="campos" type="number" name="" id="nompre" /></td>
+						<td><input class="campos"  type="number" id='nomcant' /></td>
+						<td><input class="file" type="file" name="" id="nomfile" /></td>
+						<td><input class="btnagregar" type="button" value="Agregar" onClick={validacion} /></td>
 					</tr>
 				</table>
 			</div>
@@ -59,31 +81,31 @@ const ProductAdministrarion = () => {
 						</thead>
 						<tbody>
 							<tr>
-								<td> <input type="text" name="" id="" value="ensalada"/> </td>
-								<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
-								<td> <input type="number" name="" id="" value="80"/></td>
+								<td> <input type="text" name="" id="" value="Hamburguesa Con Papas"/> </td>
+								<td> <input type="text" name="" id="" value="Hamburguesa acompañada con papas"/> </td>
+								<td> <input type="number" name="" id="" value="55"/></td>
 								<td> <input type="number" name="" id="" value="10"/> </td>
 								<td> <input type="file" name="" id="" /></td>
-								<td><input class="btnact" type="submit" value="Actualizar" /></td>
-								<td><input class="btnelim" type="submit" value="Eliminar" /></td>
+								<td><input class="btnact" type="submit" value="Actualizar" onClick={validacionact}/></td>
+								<td><input class="btnelim" type="submit" value="Eliminar" onClick={validacionelim}/></td>
 							</tr>
 							<tr>
-								<td> <input type="text" name="" id="" value="ensalada"/> </td>
-								<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
-								<td> <input type="number" name="" id="" value="80"/> </td>
-								<td> <input type="number" name="" id="" value="10"/> </td>
+								<td> <input type="text" name="" id="" value="Ensalada tipo asiatica"/> </td>
+								<td> <input type="text" name="" id="" value="Ensalada con huevo, lechuga, fideos y verduras con aderezos"/> </td>
+								<td> <input type="number" name="" id="" value="60"/> </td>
+								<td> <input type="number" name="" id="" value="15"/> </td>
 								<td> <input type="file" name="" id="" /></td>
-								<td><input class="btnact" type="submit" value="Actualizar" /></td>
-								<td><input class="btnelim" type="submit" value="Eliminar" /></td>
+								<td><input class="btnact" type="submit" value="Actualizar" onClick={validacionact}/></td>
+								<td><input class="btnelim" type="submit" value="Eliminar" onClick={validacionelim}/></td>
 							</tr>
 							<tr>
-								<td> <input type="text" name="" id="" value="ensalada"/> </td>
-								<td> <input type="text" name="" id="" value="ensalada con pollo, nueces"/> </td>
-								<td> <input type="number" name="" id="" value="10"/> </td>
-								<td> <input type="number" name="" id="" value="80"/> </td>
+								<td> <input type="text" name="" id="" value="Ensalada dulce"/> </td>
+								<td> <input type="text" name="" id="" value="Ensalada con frutos rojos y algunas verduras con aderezos"/> </td>
+								<td> <input type="number" name="" id="" value="55"/> </td>
+								<td> <input type="number" name="" id="" value="20"/> </td>
 								<td> <input type="file" name="" id="" /></td>
-								<td><input class="btnact" type="submit" value="Actualizar" /></td>
-								<td><input class="btnelim" type="submit" value="Eliminar" /></td>
+								<td><input class="btnact" type="submit" value="Actualizar" onClick={validacionact}/></td>
+								<td><input class="btnelim" type="submit" value="Eliminar" onClick={validacionelim}/></td>
 							</tr> 
 						</tbody>
 					</table>

@@ -31,7 +31,7 @@ const Useredit = () => {
                         <td><input type="email" name="" id="" value="usuario1@gmail.com"/></td>
                         <td><input type="text" name="" id="" value="21"/></td>
                         <td><input type="password" name="" id="" value="usuario1"/></td>
-                        <td><input type="submit" value="Aceptar" onClick={validacion}/></td>
+                        <td><input className='btnacept' type="submit" value="Aceptar" onClick={validacion}/></td>
                     </tr>
                 </table>
             </div>
